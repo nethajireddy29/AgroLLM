@@ -1,0 +1,40 @@
+--version
+d pull hello-world
+d images
+d run hello-world
+d run -a
+d rm id
+d rmi hello-world
+.........................................
+d pull redis
+d run --name newredis -d redis
+d ps
+d exec -it newredis redis-cli
+............................................
+d stop id
+  d rm id
+  d rmi redis
+.................................................................
+2nd
+  create a folder Redis as Dockerfile no txt only file type
+  ........................
+  FROM redis:latest
+  CMD ["redis-server"]
+  ........................
+
+  d build -t myredis
+  d images
+  d run --name newmyredis -d myredis
+  d ps
+  d stop id
+  d commit id nethajiReddy/redisnewimage
+  d images
+  d login
+  d push nethajiReddy/redisnewimage
+  d rm id
+  d rmi id
+  d pull nethajiReddy/redisnewimage
+  d run nethajiReddy/redisnewimage
+
+  .................................................................
+  
