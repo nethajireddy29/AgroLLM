@@ -1,0 +1,20 @@
+d pull ubuntu
+d run -it --name newubuntu -d ubuntu
+d ps
+d exec -it id bash
+.......................
+root@hbwo : /## git --version
+apt update
+apt install git -y
+git --version
+exit
+............................
+d stop id
+d commit id nethajireddy/newubuntuimage
+push nethajireddy/newubuntuimage
+rm
+rmi
+pull nethajireddy/newubuntuimage
+d run --name newubuntu -i ubuntu
+
+git verion
