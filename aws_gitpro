@@ -1,0 +1,28 @@
+sudo apt update
+sudo apt-get install docker.io -y
+sudo apt install git -y 
+sudo apt install nano -y
+......................................
+<html>
+head><title> my web</title></head>
+body h1 hwllo 
+/html
+..........................................
+git clone link
+cd navigate
+nano Dockerfile
+...........................
+FROM tomcate:9-jdk21
+COPY target/*.war /usr/local/tomcate/webapps/
+...........................  ctrl o, ctrl x
+
+sudo docker build -t my-web-pp
+sudo docker -d -p 9090:8080 my-web-app
+................................
+if port not there security click security group id
+  type:custom tcp
+  port range:9090
+  source : Anywhere(0.0.0.0/0)
+.................................
+sudo docker ps
+sudo docker stop id
