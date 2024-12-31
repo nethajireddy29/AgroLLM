@@ -1,5 +1,9 @@
 d pull jasonrivers/nagios:latest
 d run --name nagiosdemo -p 8888:80 jasonrivers/nagios:latest
+............................
+nagiosadmin
+nagios
+...........................
 
 ps
 stop
