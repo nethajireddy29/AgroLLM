@@ -1,0 +1,23 @@
+sudo apt update
+sudo apt-get install docker.io -y
+sudo apt install git -y 
+sudo apt install nano -y
+......................................
+<html>
+head><title> my web</title></head>
+body h1 hwllo 
+/html
+..........................................
+git clone link
+cd navigate
+nano Dockerfile
+...........................
+FROM nginx:alpine
+COPY . /usr/share/nginx/html
+...........................  ctrl o, ctrl x
+
+sudo docker build -t my-web-pp
+sudo docker -d -p 80:80 my-web-app
+................................
+sudo docker ps
+sudo docker stop id
