@@ -1,0 +1,33 @@
++ new SWP_build
+build triggers 
+  poll scm ->* * * * *
+build steps 
+  invoke top level - goals :clean
+  invoke top level - goals :install
+post build actions
+  arcive rticafts ->**/*
+  build others -> SWP_test
+..................................................
++ new SWP_tets
+delete workspace
+build step
+  copy articafts ->SWP_test ->**/*
+  invoke top level -> goald :test
+post build actions
+  archive artifacts -> **/*
+  build other -> SWP_deploy
+.....................................................
+SWP_deploy 
+delete workspace
+  copy artifacts -> SWP_test ->**/* stble
+add post actions
+  deploywar/ear -> **/*.war
+  SWP (name)
+  container - tomcate 9  -> to get credientals (conf-> tomcate-user.xml, ) to get port (conf -> server.xml)
+  .........................................
+  create pipleine SWP_build
+  ............................................................
+tomcate :port manger app
+
+
+
