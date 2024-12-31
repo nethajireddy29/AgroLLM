@@ -1,0 +1,23 @@
++ new freesyle project -> SMP_build
+source code management
+  - git , branch
+build steps
+  - adding buld steps
+      -invoke top level maven 
+          goals : clean
+      -invoke top level maven 
+          goals : install
+post build actions
+  -archeveive articafts -> **/*
+  -build other projects -> SMP_test
+.................................................
++ new freesyle project -> SMP_test
+build environments -> delete
+build steps
+  -copy articafrts from another ->SMP_build ->**/* -> stble
+  -invoke tp level maven 
+      goals : test
+post build actions
+  archive aticafts ->**/*
+......................................................
++ piplene frree style give SMP_build and ok
