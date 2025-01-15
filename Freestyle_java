@@ -20,4 +20,4 @@ build steps
 post build actions
   archive aticafts ->**/*
 ......................................................
-+ piplene frree style give SMP_build and ok
++ piplene frree style(set intatial job as build file name) give SMP_build and ok
