@@ -11,7 +11,7 @@ post build actions
 + new SWP_tets
 delete workspace
 build step
-  copy articafts ->SWP_test ->**/*
+  copy articafts ->SWP_build ->**/*
   invoke top level -> goald :test
 post build actions
   archive artifacts -> **/*
