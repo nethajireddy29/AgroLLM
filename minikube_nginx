@@ -1,7 +1,7 @@
 minikube start
-kubectl create delpoyment mynginx --image=nginx
+kubectl create deployment mynginx --image=nginx
 k get deployments
-k expose deployment mynginx --type=NodePart --port = 80 --target-port = 80
+k kubectl expose deployment mynginx --type=NodePort --port=80 --target-port=80
 k scale delpoyment mynginx --replicas =4
 k get pods
 k get deployments
